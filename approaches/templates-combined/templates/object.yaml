@@ -1,0 +1,8 @@
+apiVersion: research.arlon.dev/v1
+kind: ResearchObject
+metadata:
+  name: {{ include "templates-combined.fullname" . }}
+  labels:
+    {{- include "templates-combined.labels" . | nindent 4 }}
+spec:
+  foo: bar
